@@ -37,6 +37,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_forgetpwd = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             this.lbl_usedid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_usedid.Location = new System.Drawing.Point(59, 45);
             this.lbl_usedid.Name = "lbl_usedid";
-            this.lbl_usedid.Size = new System.Drawing.Size(82, 16);
+            this.lbl_usedid.Size = new System.Drawing.Size(81, 16);
             this.lbl_usedid.TabIndex = 0;
             this.lbl_usedid.Text = "UserName";
             // 
@@ -56,7 +57,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(59, 94);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 16);
+            this.label5.Size = new System.Drawing.Size(75, 16);
             this.label5.TabIndex = 1;
             this.label5.Text = "Password";
             // 
@@ -110,6 +111,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btn_forgetpwd);
             this.panel1.Controls.Add(this.lbl_usedid);
             this.panel1.Controls.Add(this.label5);
@@ -132,6 +134,17 @@
             this.btn_forgetpwd.Text = "Forget Password";
             this.btn_forgetpwd.UseVisualStyleBackColor = true;
             this.btn_forgetpwd.Click += new System.EventHandler(this.btn_forgetpwd_Click);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(135, 201);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 33);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "close";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frm_login
             // 
@@ -162,5 +175,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_forgetpwd;
+        private System.Windows.Forms.Button button1;
     }
 }
